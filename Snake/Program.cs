@@ -1,7 +1,7 @@
 ﻿using static System.Console;
 OutputEncoding = System.Text.Encoding.UTF8;
 ConsoleKey direction = ConsoleKey.S;
-Random rnd = new Random();//"DooD on top!".Select(z => (int)z).Sum()
+Random rnd = new Random("DooD on top!".Select(z => (int)z).Sum());
 (int x, int y) size = (24, 24);
 List<(int x, int y)> snake = new List<(int x, int y)>() { (10, 10), (10, 11), (10, 12) };
 (int x, int y) apple = GenApple();
